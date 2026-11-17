@@ -1,0 +1,48 @@
+{
+  "name": "dsh-script-studio",
+  "version": "1.1.0",
+  "type": "module",
+  "description": "DeepSeek Harness 插件：短剧剧本生产工作台 v2.0-r4（零子代理直写流程 + 本地复核 + 五维评分 + 项目脚手架 + 已验证技法库）",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "lib/**/*.js",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "author": "your-name",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "short-drama",
+    "screenwriting",
+    "script-studio",
+    "workflow"
+  ],
+  "engines": {
+    "node": "^22.19.0 || ^24.0.0"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/442443051/dsh-script-studio.git"
+  },
+  "homepage": "https://github.com/442443051/dsh-script-studio",
+  "bugs": {
+    "url": "https://github.com/442443051/dsh-script-studio/issues"
+  }
+}
